@@ -15,7 +15,8 @@ import DadosUsuario from "./components/condicional/DadosUsuario";
 import DiretaPai from "./components/comunicacao/DiretaPai";
 import IndiretaPai from "./components/comunicacao/IndiretaPai";
 import Input from "./components/formulario/Input";
-import Contador from "./components/contador/Contador"
+import Contador from "./components/contador/Contador";
+import Megasena from "./components/megasena/Megasena";
 
 export default function App() {
     return(
@@ -23,6 +24,10 @@ export default function App() {
             <h1 className="Centralizado">Curso de React</h1>
             
             <div className="Exercicios">
+                <Card title="#13 - Megasena" color="#fb743e">
+                    <Megasena />
+                </Card>
+
                 <Card title="#12 - Contador" color="#00917c">
                     <Contador valorInicial={10} passoInicial={1} />
                 </Card>
