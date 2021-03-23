@@ -10,6 +10,12 @@ import Familia from "./components/basics/Familia";
 import FamiliaMembro from "./components/basics/FamiliaMembro";
 import ListaAlunos from "./components/repeticao/ListaAlunos";
 import TabelaProdutos from "./components/repeticao/TabelaProdutos";
+import ParOuImpar from "./components/condicional/ParOuImpar";
+import DadosUsuario from "./components/condicional/DadosUsuario";
+import DiretaPai from "./components/comunicacao/DiretaPai";
+import IndiretaPai from "./components/comunicacao/IndiretaPai";
+import Input from "./components/formulario/Input";
+import Contador from "./components/contador/Contador"
 
 export default function App() {
     return(
@@ -17,6 +23,28 @@ export default function App() {
             <h1 className="Centralizado">Curso de React</h1>
             
             <div className="Exercicios">
+                <Card title="#12 - Contador" color="#00917c">
+                    <Contador valorInicial={10} passoInicial={1} />
+                </Card>
+
+                <Card title="#11 - Componente controlado">
+                    <Input />
+                </Card>
+
+                <Card title="#10 - Comunicação indireta + states">
+                    <IndiretaPai />
+                </Card>
+
+                <Card title="#9 - Comunicação direta" color="#383e56">
+                    <DiretaPai />
+                </Card>
+
+                <Card title="#8 - Rederização condicional" color="#383e56">
+                    <ParOuImpar>11</ParOuImpar>
+                    <DadosUsuario usuario={{ nome: "Bruno" }}/>
+                    <DadosUsuario />
+                </Card>
+
                 <Card title="#7 - Tabela de produtos" color="#383e56">
                     <TabelaProdutos /> 
                 </Card>
